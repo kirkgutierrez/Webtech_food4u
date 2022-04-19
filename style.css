@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e9edc9;
+}
+
+
+li {
+  list-style: none;
+}
+
+header {
+  color: white;
+  height: 10vh;
+  padding-top: 10px;
+}
+
+.logo img {
+  width:300px;
+  height: 80px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pasta {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: center;
+}
+
+.top {
+  margin-top: 10%;
+}
+
+.mtop {
+  margin-top: 5%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+.container h1{
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  padding: 10px 30px;
+  background: none;
+  border: 1px solid rgb(0, 0, 0);
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.home {
+  color: rgb(0, 0, 0);
+  height: 90vh;
+}
+
+.home .right {
+  text-align: center;
+}
+
+.home .right img {
+  width: 400px;
+  height: 400px;
+}
+
+.home .right .img {
+  text-align: left;
+}
+
+.home .right .img img {
+  width: 81px;
+  height: 81px;
+}
+
+.home .right .img {
+  justify-content: space-between;
+
+}
+.home::after {
+position: absolute;
+content: '';
+width: 100%;
+height: 100%;
+filter: blur(5px);
+background-image: url("../images/bg1.png");
+background-size: cover;
+background-repeat: no-repeat;
+top: 0;
+z-index: -1;
+}
+
+.home h2 {
+  font-size: 80px;
+  font-family: 'Birthstone', cursive; ;
+  
+}
+
+.home h1, h2, h3 {
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+.home h1 {
+  font-size: 100px;
+  font-family: 'Fredericka the Great', cursive;
+  
+}
+
+.home h5{
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.home h3 {
+  margin-bottom: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-family: 'Fredericka the Great', cursive;
+ 
+}
+
+.home hr {
+  background: rgb(0, 0, 0);
+  border: none;
+  border-bottom: 1px solid white;
+  width: 60%;
+  margin-bottom: 30px;
+  border-color: black;
+  
+}
+
+.home .num h1 {
+  font-size: 40px;
+  margin-left: 5px;
+  
+}
+
+.home .text {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+.background {
+  background: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.heading {
+  padding-top: 5%;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.services {
+  position: relative;
+  z-index: 2;
+}
+
+.services img {
+  width: 300px;
+  height: 300px;
+}
+
+.services h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.services button {
+  background: #FFE001;
+  color: black;
+  font-weight: 100;
+}
+
+.discover {
+  padding-bottom: 50px;
+}
+
+.discover .img {
+  margin-top: 50px;
+}
+
+.discover .img:nth-child(1),
+.discover .img:nth-child(3) {
+  width: 30%;
+  position: relative;
+}
+
+.discover .img:nth-child(1)::after,
+.discover .img:nth-child(3)::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+}
+
+.discover .img:nth-child(2) {
+  width: 40%;
+  transform: scale(1.2);
+  position: relative;
+  z-index: 2;
+  box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.gallery {
+  padding-top: 80px;
+  color: white;
+}
+
+.gallery .box {
+  position: relative;
+  margin: 10px;
+}
+
+.gallery .right .box {
+  margin-bottom: 25px;
+}
+
+.gallery .text {
+  position: absolute;
+  top: 0;
+  padding: 30px;
+}
+
+.gallery .left .text {
+  word-break: break-all;
+}
+
+.contact {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.contact form {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+input:nth-last-child(1) {
+  background: #FFE001;
+  border: none;
+}
+
+footer {
+  color: white;
+  padding: 60px;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 50%;
+  background-image: url("../images/3chili.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: grey;
+}
+
+footer .content {
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 60px;
+}
+
+footer li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+footer .address i {
+  margin-right: 20px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+footer i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+footer .icon i {
+  line-height: 30px;
+}
+
+
